@@ -1,0 +1,67 @@
+<body>
+    <div class="mainContainer">
+    
+    <div class="mainContent">
+    <div class="Paragraph">
+     <div>     
+    <h1>Welcome</h1><br>
+    <p>
+    You are 30 seconds away<br> from earning your<br>
+    money!
+    </p>
+    </div><br>
+    
+    <div>
+    <button class="btn" (click)="loginPage()">Login</button>
+    </div>
+    </div>
+    
+    <div class="main">
+    
+    <h2>Apply as a Employee</h2> 
+    <form #registerForm="ngForm">
+      
+    <div class="inputForm">
+    <div class="rows"> 
+    <input type="text" name="firstName" [(ngModel)]="firstName" placeholder="First Name"  class="input"  >
+    <input type="email" name="yourEmail" [(ngModel)]="yourEmail"   placeholder="Your Email"  class="input"  >  
+    </div><br>
+    
+    <div  class="rows">
+        <input type="text" name="lastName" [(ngModel)]="lastName"   placeholder="Last Name" class="input" >
+        <input type="tel" name="yourPhone" [(ngModel)]="yourPhone"  placeholder="Your Phone"  class="input"  >
+    </div><br>
+    
+    <div class="rows">
+    <input type="password" name="password" [(ngModel)]="password"  placeholder="Password"  class="input" >
+    <input type="text" name="pleaseSelectYourSecurityQuestion" [(ngModel)]="pleaseSelectYourSecurityQuestion"  placeholder="Please select your Security Question"  class="input" >
+    </div><br>
+    
+    <div class="rows">
+    <input type="pass" name="confirmPassword" [(ngModel)]="confirmPassword"   placeholder="Confirm Password"  class="input">
+    <input type="text" name="enterYourAnswer"  [(ngModel)]="enterYourAnswer"  placeholder="Enter Your Answer"  class="input">
+    </div><br>
+    
+    <div class="gender">
+        <div>
+            <input type="radio" id="male" name="genderMale" value="male" [(ngModel)]="genderMale" >Male
+          </div>
+    
+          <div>
+            <input type="radio" id="female" name="genderFemale" value="female"[(ngModel)]="genderFemale"  >Female
+          </div>
+    
+    
+    <div>
+    <button class="btn2"  (click)="register()">Register</button>
+    </div>
+    
+    </div>
+    </div>
+     </form>
+    
+    </div>
+    
+    </div>
+    </div>
+    </body>

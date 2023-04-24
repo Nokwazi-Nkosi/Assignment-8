@@ -1,6 +1,12 @@
 <body>
 <div class="logo">
-<img src="">
+<div class="picture">
+<img src="../../assets/./images.jpg">
+</div>
+<div class="navBar">
+<div>EXCLUSIVE ADDONS</div> 
+<div>FOR ELEMENTOR</div>
+</div>
 </div>
 
 <div class="mainContainer">
@@ -13,13 +19,29 @@
 <div class="loginForm">
 <div class="form"> 
  <h4>Log In</h4>   
-<form class="ngForm">
-<input type="text" placeholder="User Name / Email Address" class="ngForm, input"><br><br>
-<input type="email" placeholder="Password"class="ngForm, input"><br><br>
-<button class="btn" >Log In</button><br>
-<input type="checkbox"class="ngForm">
+<form >
+  <!-- the following input attribute is useful if the input tag is not inside a form, [ngModelOptions]="{standalone: true} -->
+<input type="text" [(ngModel)]="loginEmail" placeholder="User Name / Email Address" class="login_email" [ngModelOptions]="{standalone: true}"><br><br>
+<input type="password" [(ngModel)]="loginPassword" placeholder="Password" class="login_pass" [ngModelOptions]="{standalone: true}"><br><br>
+<button class="btn" (click)="login( ) ">Log In</button><br><br>
+
+<div class="lastInput"> 
+<div>      
+<input type="checkbox"></div>
+
+<div>
+Remember Me 
+</div>
+<div>
+  Lost Your Password  
+</div>
+</div><br>
+
+<button class="btn2">Register Your Account </button>
 </form>
+
 </div> 
+
 </div>
 </div>
 
