@@ -34,21 +34,27 @@
     
     <div class="rows">
     <input type="password" name="password" [(ngModel)]="password"  placeholder="Password"  class="input" >
-    <input type="text" name="pleaseSelectYourSecurityQuestion" [(ngModel)]="pleaseSelectYourSecurityQuestion"  placeholder="Please select your Security Question"  class="input" >
+  
+
+ <select class="input">
+<option  [(ngModel)]="pleaseSelectYourSecurityQuestion"  class="input" name="pleaseSelectYourSecurityQuestion">Please select your Security Question</option>
+<option  [(ngModel)]="whatIsYourIdentityNumber"  class="input"name="whatIsYourIdentityNumber">What is your Identity Number?</option>
+<option  [(ngModel)]="whatIsYourPhysicalAddress"  class="input" name="whatIsYourPhysicalAddress">What is your physical address?</option>
+    </select>
     </div><br>
-    
+  
     <div class="rows">
-    <input type="pass" name="confirmPassword" [(ngModel)]="confirmPassword"   placeholder="Confirm Password"  class="input">
+    <input type="password" name="confirmPassword" [(ngModel)]="confirmPassword"   placeholder="Confirm Password"  class="input">
     <input type="text" name="enterYourAnswer"  [(ngModel)]="enterYourAnswer"  placeholder="Enter Your Answer"  class="input">
     </div><br>
     
     <div class="gender">
         <div>
-            <input type="radio" id="male" name="genderMale" value="male" [(ngModel)]="genderMale" >Male
+            <input type="radio" id="male" name="gender" value="male" [(ngModel)]="gender" >Male
           </div>
     
           <div>
-            <input type="radio" id="female" name="genderFemale" value="female"[(ngModel)]="genderFemale"  >Female
+            <input type="radio" id="female" name="gender" value="female"[(ngModel)]="gender"  >Female
           </div>
     
     
